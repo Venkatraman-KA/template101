@@ -1,0 +1,36 @@
+<div>
+	<snap-drawer>
+		<div class="snap-menu">
+			<div class="sidebar-header text-center">
+				<img src="images/billboard.png" alt="" class="sidebar-img img-circle">
+			</div>
+			<ul class="snap-ul">
+				<li ng-class="{active: $state.includes('overview')}"><a ui-sref="overview">HOME</a></li>
+			</ul>
+		</div>
+	</snap-drawer>
+	<snap-dragger></snap-dragger>
+	<snap-content snap-opt-tap-to-close="false">
+
+		<a href="" snap-toggle="left" ng-click="menuOpen = !menuOpen">
+			<span class="menutoggle">
+				<i ng-hide="menuOpen" class="fa fa-bars fa-2x" ></i>
+				<i ng-show="menuOpen" class="fa fa-times fa-2x" ></i>
+			</span>
+		</a>
+		
+		<div class="fr">
+		<h2>Overview <small>Your tagline goes here</small></h2>
+		</div>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Welcome!</h1>
+				Lorep ipsum sweid hsiw hsjdhei oesdj wiewied kjsdkjs weiwe sdjksd wewsk skdjksd sdjskdj skdjskdwoie dsdw wewe!<br /><br />
+				<p>
+					<a ui-sref="login" class="btn btn-primary btn-lg btn-white">Back To Home</a>
+				</p>
+				
+			</div>
+		</div>
+	</snap-content>	
+</div>
